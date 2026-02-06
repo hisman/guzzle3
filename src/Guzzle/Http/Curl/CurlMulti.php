@@ -269,7 +269,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
      * @param RequestInterface $request Request to remove
      * @param \Exception       $e       Exception encountered
      */
-    protected function removeErroredRequest(RequestInterface $request, \Exception $e = null)
+    protected function removeErroredRequest(RequestInterface $request, $e = null)
     {
         $this->exceptions[] = array('request' => $request, 'exception' => $e);
         $this->remove($request);

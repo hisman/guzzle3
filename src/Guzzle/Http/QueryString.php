@@ -157,7 +157,7 @@ class QueryString extends Collection
      * @return self
      * @see \Guzzle\Http\QueryString::aggregateUsingComma()
      */
-    public function setAggregator(QueryAggregatorInterface $aggregator = null)
+    public function setAggregator($aggregator = null)
     {
         // Use the default aggregator if none was set
         if (!$aggregator) {
